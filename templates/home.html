@@ -9,8 +9,55 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
     <title>Hello, world!</title>
+
   </head>
   <body>
+    <style>
+      .container-1 {
+        position: relative;
+        top: 50px; /* Adjust the top position as needed */
+        left: 50px; /* Adjust the left position as needed */
+        z-index: 0; /* Set a higher z-index to make it appear above container-2 */
+        
+
+    }
+    .container-1:hover{
+      
+      transform: translateY(-65px); 
+      scale: 1.2;
+      transition: cubic-bezier(0.55, 0.46, 0.45, 0.94);
+      transition-duration: 0.7s;
+      
+      
+    }
+
+    .container-2 {
+        position: relative;
+        top: 100px; /* Adjust the top position as needed */
+        left: -30px; /* Adjust the left position as needed */
+        z-index: 1; /* Lower z-index to make it appear below container-1 */
+    }
+    .container-2:hover{
+      
+      transform: translateX(65px);
+      scale: 1.2;
+      transition: cubic-bezier(0.55, 0.46, 0.45, 0.94);
+      transition-duration: 0.7s;}
+
+    .container-3 {
+      position: relative;
+      top: 70px; /* Adjust the top position as needed */
+      left: 50px; /* Adjust the left position as needed */
+      z-index: 2; /* Lower z-index to make it appear below container-1 */
+    }
+
+    .container-3:hover{
+      
+      transform: translateY(65px); 
+      scale: 1.2;
+      transition: cubic-bezier(0.55, 0.46, 0.45, 0.94);
+      transition-duration: 0.7s;}
+    </style>
     <header >
         <nav class="navbar navbar-expand-lg bg-body-tertiary" style="background-color: #e3f2fd;">
             <div class="container-fluid">
@@ -60,32 +107,57 @@
     </div>
     <!--content desc.-->
     <div class="row " style="background-color: #15f0e9;">
-        <div class="col-lg-7 col-sm-10">
-          <div class="container-fluid" style="background-color: #f0e815;">
-            <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc maximus, nulla ut commodo sagittis, sapien dui mattis dui, non pulvinar lorem felis nec erat.
-
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc maximus, nulla ut commodo sagittis, sapien dui mattis dui, non pulvinar lorem felis nec erat
-            </p>
-            <!-- get started button -->
-            <div class="container-fluid">
-              <a href="#"><button class="btn btn-outline-success ">Get Started</button></a>
-            </div>
+      <div class="col-lg-7 col-sm-10">
+        <div class="container-fluid" style="background-color: #f0e815;">
+          <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc maximus, nulla ut commodo sagittis, sapien dui mattis dui, non pulvinar lorem felis nec erat.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc maximus, nulla ut commodo sagittis, sapien dui mattis dui, non pulvinar lorem felis nec erat
+          </p>
+          <!-- get started button -->
+          <div class="container-fluid">
+            <a href="#"><button class="btn btn-outline-success ">Get Started</button></a>
           </div>
-          
         </div>
-        <div class="col-sm-0 col-lg-5">
-            <div class="container-fluid" style="background-color: blue">
-                <h1>Hello</h1>
+        
+      </div>
+      <div class="col-sm-0 col-lg-5">
+        
+        <div class="container">
+          <div class="row">
+              <div class="col-md-6 col-sm-6 container-1" style="background-color: red">
+                  <!-- Content for the first container -->
+                  hello 
+                  <ul>
+                    <li>hello</li>
+                    <li>hello</li>
+                    <li>hello</li>
+                  </ul>
+              </div>
+              <div class="col-md-6 col-sm-6 container-2" style="background-color:brown">
+                  <!-- Content for the second container -->
+                  hellooo
+                  <ul>
+                    <li>hello</li>
+                    <li>hello</li>
+                    <li>hello</li>
+                  </ul>
+              </div>
+              <div class="col-md-6 col-sm-6 container-3" style="background-color: bisque">
+                <!-- Content for the third container -->
+                hellooo
                 <ul>
-                    <li>Item 1</li>
-                    <li>Item 2</li>
-                    <li>Item 3</li>
-
+                  <li>hello</li>
+                  <li>hello</li>
+                  <li>hello</li>
                 </ul>
-            </div>
+              </div>
+          </div>
         </div>
-
+        
+              
+      </div>
     </div>
+
+  
 
 
     
