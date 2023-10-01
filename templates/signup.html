@@ -20,20 +20,31 @@
                 <h5 class="text text-center fw-lighter">input your details below</h5>
                 <form action="#">
                   <div class="form-control">
-                    <label class="form-label" for="Email">Email</label><br/>
-                    <input class="form-control" type="text" placeholder="Input your email"><br/>
-                    <label class="form-label" for="Username">Username</label><br/>
-                    <input class="form-control" type="text" placeholder="Choose a username"><br/>
-                    <label class="form-label" for="password">Password</label><br/>
-                    <input  class="form-control" type="password" placeholder="Choose a password"><br/>
-                    <label class="form-label" for="password">Confirm Password</label><br/>
-                    <input class="form-control" type="password" placeholder="Confirm your password"><br/>
-                    <select class="form-select" aria-label="Default select example">
-                      <option selected>Choose a role</option>
-                      <option value="1">Student</option>
-                      <option value="2">Contributor</option>
-                      <option value="3">Investor</option>
-                    </select>
+                    <div>
+                      <label class="form-label" for="Email">Email</label><br/>
+                      <input class="form-control" type="text" placeholder="Input your email" id="Email"><br/>
+                    </div>
+                    <div>
+                      <label class="form-label" for="Username">Username</label><br/>
+                      <input class="form-control" type="text" placeholder="Choose a username" id="Username"><br/>
+                    </div>
+                    <div>
+                      <label class="form-label" for="password">Password</label><br/>
+                      <input  class="form-control" type="password" placeholder="Choose a password" id="password"><br/>
+                    </div>
+                    <div>
+                      <label class="form-label" for="confirmpassword">Confirm Password</label><br/>
+                      <input class="form-control" type="password" placeholder="Confirm your password" id="confirmpassword"><br/>
+                    </div>
+
+                    <div>
+                      <select class="form-select" aria-label="Default select example">
+                        <option selected>Choose a role</option>
+                        <option value="1">Student</option>
+                        <option value="2">Contributor</option>
+                        <option value="3">Investor</option>
+                      </select>
+                    </div>
                     <div class="container-fluid align-content-center">
                       <button type="submit" class="btn btn-primary mt-2 ">Sign up</button>
 
